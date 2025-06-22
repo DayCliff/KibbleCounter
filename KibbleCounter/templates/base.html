@@ -8,7 +8,31 @@
       href="{{ url_for('static',filename='css/style.css') }}"
     />
 </head>
+<! -- Form -->
+<div class="container">
+    <form action="" method="POST">
+        <div class="form-group">
+            <label> X </label>
+            <input type-="text" placeholder="kcal(kcal ME)/kg" name="x"/>
+        </div>
 
+        <div class="form-group">
+            <label> Y </label>
+            <input type-="text" placeholder="kg/bag" name="y"/>
+        </div>
+
+        <div class="form-group">
+            <label> Z </label>
+            <input type-="text" placeholder="kcal(kcal ME)/cup" name="z"/>
+        </div>
+
+        <input type="submit" value="Calculate" id="calc_btn" class="btn" />
+        <br />
+        <div class="alert">
+          Result
+        </div>
+    </form>
+</div>
 </html>
 
 
