@@ -10,7 +10,7 @@
 </head>
 <! -- Form -->
 <div class="container">
-    <form action="" method="POST">
+    <form action="/calculate" method="POST">
         <div class="form-group">
             <label> X </label>
             <input type-="text" placeholder="kcal(kcal ME)/kg" name="x"/>
@@ -29,7 +29,7 @@
         <input type="submit" value="Calculate" id="calc_btn" class="btn" />
         <br />
         <div class="alert">
-          Result
+          {{ result }}
         </div>
     </form>
 </div>
